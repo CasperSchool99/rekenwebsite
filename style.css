@@ -1,0 +1,45 @@
+body {
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+	width: 100vw;	
+}
+
+.background {
+	background-image: url(img/achtergrond3smurfen.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	
+
+}
+
+.grp4smurf {
+	position: absolute;
+	width: calc(100vw / 3840 * 971);
+	height: calc(115vh / 2160 * 858);
+	left: calc(100vw / 3840 * 800);
+	top: calc(100vh / 2160 * 690);
+	cursor: pointer;
+}
+
+.grp5smurf {
+	position: absolute;
+	width: calc(100vw / 3840 * 783);
+	height: calc(115vh / 2160 * 866);
+	left: calc(100vw / 3840 * 1925);
+	top: calc(100vh / 2160 * 1150);
+	cursor: pointer;
+}
+
+.grp6smurf {
+	position: absolute;
+	width: calc(100vw / 3840 * 799);
+	height: calc(115vh / 2160 * 1053);
+	left: calc(100vw / 3840 * 2297);
+	top: calc(100vh / 2160 * 108);
+	cursor: pointer;
+}
