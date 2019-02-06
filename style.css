@@ -6,7 +6,7 @@ body {
 }
 
 .background {
-	background-image: url(img/smurfenachtergrondleeg.png);
+	background-image: url(img/smurfenachtergrondleegtekst.png);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
