@@ -10,7 +10,7 @@
 	<div class="backgroundgroep">
 		<div class="sommen">
 		<div class="panel blue">
-			<button>+ sommen</button>
+			<a href="Plussommen.php"><button>+ sommen</button></a>
 			<button>- sommen</button>
 			<button>x sommen</button>
 			<button>: sommen</button>
