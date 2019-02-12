@@ -1,0 +1,56 @@
+body {
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+	width: 100vw;	
+}
+
+a {
+	text-decoration: none;
+}
+
+.background {
+	background-image: url(img/achtergrondsoortsommen.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+  margin: 10px 50px 0 50px;
+}
+
+.button {
+  background-color: #008CBA; 
+  color: white; 
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+}
+
+.sommen {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 200px 0 0 0;
+}
