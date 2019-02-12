@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<?php
+	include 'header.php';
+	?>
 	<title>Rekensite</title>
 </head>
 <body>

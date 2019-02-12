@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/btn.css" />
+	<script src="../js/main.js"></script>
+	<title>groep4</title>
 </head>
-	<link rel="stylesheet" type="text/css" href="groepstyle.css">
 <body>
-	<div class="background">
+	<div class="backgroundgroep">
 		<div class="sommen">
-			<a href="Plussommen.php"><input class="button" type="submit" value="+" style="font-size: 20px;" /> </a>
-			<a href="Minsommen.php"><input class="button" type="submit" value="-" style="font-size: 20px;" /> </a>
-			<a href="Keersommen.php"><input class="button" type="submit" value="x" style="font-size: 20px;" /> </a>
-			<a href="Deelsommen.php"><input class="button" type="submit" value=":" style="font-size: 20px;" /> </a>
+		<div class="panel blue">
+			<button>+ sommen</button>
+			<button>- sommen</button>
+			<button>x sommen</button>
+			<button>: sommen</button>
+			<button>TOETS!</button>
+		</div>
 		</div>
 	</div>
 </body>

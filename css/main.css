@@ -1,3 +1,5 @@
+/* INDEX */
+
 body {
 	padding: 0;
 	margin: 0;
@@ -6,7 +8,7 @@ body {
 }
 
 .background {
-	background-image: url(img/smurfenachtergrondleegtekst.png);
+	background-image: url(../img/smurfenachtergrondleegtekst.png);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
@@ -43,3 +45,23 @@ body {
 	top: calc(100vh / 2160 * 108);
 	cursor: pointer;
 }
+
+/* GROEPEN */
+
+.backgroundgroep {
+	background-image: url(../img/achtergrondsoortsommen.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+  
+  .sommen {
+	  display: flex;
+	  flex-direction: row;
+	  flex-wrap: wrap;
+	  justify-content: center;
+	  padding: 200px 0 0 0;
+  }
