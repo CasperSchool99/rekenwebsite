@@ -9,6 +9,8 @@ function Plussom() {
 	echo $Getal1 . ' + ' . $Getal2 . ' =';
 	return;
 }
+
+	include 'arrayshit.php';
 /*
 $i = 0;
 while ($i <= 20) {
