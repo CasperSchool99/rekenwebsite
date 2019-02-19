@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" type="text/css" href="css/rekensommen.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+<head>
+    <title></title>
+</head>
+<body>
+<div class="background">
+    <div class="grey">
 <?php 
     session_start();
     $Getal1 = 0;
@@ -53,7 +63,7 @@
             echo $Getal1 . " " .  $operator . " " .  $Getal2 . " = " ;
             echo"  </label>
             <input type='number' name='answer'>
-            <input type='submit' name='submit'>
+            <input type='submit' name='submit' value='Volgende'>
         </form>
     ";
             if ($_SESSION['antwoorden'] == ""){
@@ -84,9 +94,13 @@
             array_push($sommen, $som);
             $_SESSION['sommen'] = $sommen;
         }
-        echo"<pre>";
-        var_dump($_SESSION['antwoorden']);
-        echo"</pre><br/><pre>";
-        var_dump($_SESSION['sommen']);
-        echo"</pre";
+        //echo"<pre>";
+        //var_dump($_SESSION['antwoorden']);
+        //echo"</pre><br/><pre>";
+        //var_dump($_SESSION['sommen']);
+        //echo"</pre";
 ?>
+</div>
+</div>
+</body>
+</html>
