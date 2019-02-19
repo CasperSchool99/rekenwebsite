@@ -12,11 +12,11 @@ $groep = $_GET['groep'];
 	<div class="backgroundgroep">
 		<div class="sommen">
 		<div class="panel blue">
-			<a href="arrayshit.php?groep=<?= $groep ?>&operator=plus"><button>+ sommen</button></a>
-			<a href="arrayshit.php?groep=<?= $groep ?>&operator=min"><button>- sommen</button></a>
-			<a href="arrayshit.php?groep=<?= $groep ?>&operator=keer"><button>x sommen</button></a>
-			<a href="arrayshit.php?groep=<?= $groep ?>&operator=deel"><button>: sommen</button></a>
-			<a href="arrayshit.php?groep=<?= $groep ?>&operator=toets"><button>TOETS!</button></a>
+			<a href="main.php?groep=<?= $groep ?>&operator=plus"><button>+ sommen</button></a>
+			<a href="main.php?groep=<?= $groep ?>&operator=min"><button>- sommen</button></a>
+			<a href="main.php?groep=<?= $groep ?>&operator=keer"><button>x sommen</button></a>
+			<a href="main.php?groep=<?= $groep ?>&operator=deel"><button>: sommen</button></a>
+			<a href="main.php?groep=<?= $groep ?>&operator=toets"><button>TOETS!</button></a>
 		</div>
 		</div>
 	</div>

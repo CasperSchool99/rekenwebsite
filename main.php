@@ -23,8 +23,7 @@
     else {
         echo "helemaal fout gegaan joh flink wat errors hier ik zou system32 verwijderen als ik jou was. houdoe.";
     }
-    if ($operator == ":") {
-        
+    if ($operator == ":") {   
     }else {
         if ($groep == '4') {
             $Getal1 = rand(1, 10);
@@ -39,12 +38,9 @@
             echo "helemaal fout gegaan joh flink wat errors hier ik zou system32 verwijderen als ik jou was. houdoe.";
         }
     }
-    
-
-
     if (!isset($_SESSION['viewed'])) {
         $_SESSION['viewed'] = 0;
-        $_SESSION['array'] = 0;
+        $_SESSION['antwoorden'] = 0;
         $_SESSION['sommen'] = array();
         $_SESSION['index'] = 0;
     }
@@ -60,13 +56,13 @@
             <input type='submit' name='submit'>
         </form>
     ";
-            if ($_SESSION['array'] == ""){
+            if ($_SESSION['antwoorden'] == ""){
                 $answers = array();
                 $sommen = array();
-                $_SESSION['array'] = $answers;
+                $_SESSION['antwoorden'] = $answers;
                 $_SESSION['sommen'] = $sommen;
             }else{
-                $answers = $_SESSION['array'];
+                $answers = $_SESSION['antwoorden'];
                 $sommen = $_SESSION['sommen'];
             }
             $som = array($Getal1, $Getal2, $operator);
@@ -74,14 +70,11 @@
 
         if (isset($_POST['submit'])){
             $_SESSION['answer'] = $_POST['answer'];
-            
-
             AddToArrayAndSession($answers, $_POST['answer']);
-
         }
         function AddToArrayAndSession($answers, $newitem){
             array_push($answers, $newitem);
-            $_SESSION['array'] = $answers;
+            $_SESSION['antwoorden'] = $answers;
             $_SESSION['index']++;
             if ($_SESSION['index'] >= 20) {
                 header('location:resultaten.php');
@@ -92,7 +85,7 @@
             $_SESSION['sommen'] = $sommen;
         }
         echo"<pre>";
-        var_dump($_SESSION['array']);
+        var_dump($_SESSION['antwoorden']);
         echo"</pre><br/><pre>";
         var_dump($_SESSION['sommen']);
         echo"</pre";
