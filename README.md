@@ -1,2 +1,2 @@
 # rekenwebsite
-repository voor rekenwebsite project
+repository voor rekenwebsite project enzo thallazz
