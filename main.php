@@ -11,21 +11,33 @@
     }elseif ($operator == 'keer') {
         $operator = "x";
     }elseif ($operator == 'deel') {
-        
-    }else {
+        $operator = ":";
+        include('sommen/Deelsommen.php');
+    }elseif ($operator == 'toets') {
+        $items = Array('+','-','x',':');
+        $operator = $items[array_rand($items)];
+        if ($operator == ':') {
+            include('sommen/Deelsommen.php');
+        }
+    }
+    else {
         echo "helemaal fout gegaan joh flink wat errors hier ik zou system32 verwijderen als ik jou was. houdoe.";
     }
-    if ($groep == '4') {
-        $Getal1 = rand(1, 10);
-        $Getal2 = rand(1, 10);
-    }elseif ($groep == '5') {
-        $Getal1 = rand(1, 20);
-        $Getal2 = rand(1, 20);
-    }elseif ($groep == '6') {
-        $Getal1 = rand(1, 100);
-        $Getal2 = rand(1, 100);
+    if ($operator == ":") {
+        
     }else {
-        echo "helemaal fout gegaan joh flink wat errors hier ik zou system32 verwijderen als ik jou was. houdoe.";
+        if ($groep == '4') {
+            $Getal1 = rand(1, 10);
+            $Getal2 = rand(1, 10);
+        }elseif ($groep == '5') {
+            $Getal1 = rand(1, 20);
+            $Getal2 = rand(1, 20);
+        }elseif ($groep == '6') {
+            $Getal1 = rand(1, 100);
+            $Getal2 = rand(1, 100);
+        }else {
+            echo "helemaal fout gegaan joh flink wat errors hier ik zou system32 verwijderen als ik jou was. houdoe.";
+        }
     }
     
 
@@ -79,13 +91,9 @@
             array_push($sommen, $som);
             $_SESSION['sommen'] = $sommen;
         }
-        echo"";
-
         echo"<pre>";
         var_dump($_SESSION['array']);
         echo"</pre><br/><pre>";
         var_dump($_SESSION['sommen']);
         echo"</pre";
-
-
 ?>
