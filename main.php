@@ -12,7 +12,6 @@
     session_start();
     $Getal1 = 0;
     $Getal2 = 0;
-    $toets = false;
     $operator = $_GET['operator'];
     $groep = $_GET['groep'];
     if ($operator == 'plus') {
@@ -25,7 +24,6 @@
         $operator = ":";
         include('sommen/Deelsommen.php');
     }elseif ($operator == 'toets') {
-        $toets = true;
         $items = Array('+','-','x',':');
         $operator = $items[array_rand($items)];
         if ($operator == ':') {
@@ -88,23 +86,14 @@
             array_push($answers, $newitem);
             $_SESSION['antwoorden'] = $answers;
             $_SESSION['index']++;
-            if ($_SESSION['index'] >= 20) {
-                if ($toets == false) {
-                    header('location:resultaten.php?toets=false');
-                }else{       
-                    header('location:resultaten.php?toets=true');
-                }
+            if ($_SESSION['index'] >= 20) {    
+                    header('location:resultaten.php');
             }
         }
         function AddToArrayAndSessionsom($sommen, $som){
             array_push($sommen, $som);
             $_SESSION['sommen'] = $sommen;
         }
-        //echo"<pre>";
-        //var_dump($_SESSION['antwoorden']);
-        //echo"</pre><br/><pre>";
-        //var_dump($_SESSION['sommen']);
-        //echo"</pre";
 ?>
 </div>
 </div>
