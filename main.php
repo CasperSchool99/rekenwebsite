@@ -86,8 +86,15 @@
             array_push($answers, $newitem);
             $_SESSION['antwoorden'] = $answers;
             $_SESSION['index']++;
-            if ($_SESSION['index'] >= 20) {    
+            if ($_GET['operator'] == 'toets') {
+                $toets = 1;
+            }
+            if ($_SESSION['index'] >= 20) {
+                if ($toets == 1) {
+                    header('location:resultaten.php?toets=1');
+                }else{       
                     header('location:resultaten.php');
+                }
             }
         }
         function AddToArrayAndSessionsom($sommen, $som){

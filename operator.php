@@ -11,7 +11,7 @@ $groep = $_GET['groep'];
 ?>
 	<div class="backgroundgroep">
 		<div class="sommen">
-		<div class="panel blue">
+		<div class="panel purple">
 			<a href="main.php?groep=<?= $groep ?>&operator=plus"><button>+ sommen</button></a>
 			<a href="main.php?groep=<?= $groep ?>&operator=min"><button>- sommen</button></a>
 			<a href="main.php?groep=<?= $groep ?>&operator=keer"><button>x sommen</button></a>
