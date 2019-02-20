@@ -14,6 +14,9 @@
     $Getal2 = 0;
     $operator = $_GET['operator'];
     $groep = $_GET['groep'];
+    if (!isset($_SESSION['som'])) {
+        $_SESSION['som'] = 1;
+    }
     if ($operator == 'plus') {
         $operator = "+";
     }elseif ($operator == 'min') {
@@ -57,6 +60,7 @@
     if ($_SESSION['viewed'] == 0) {
         $_SESSION['viewed'] = 1;
     }
+    echo '<div class="center">' . $_SESSION['som']++ . ' / ' . '20 </div>';
     echo"
         <form method='post'>
             <label for='awnser'>";
