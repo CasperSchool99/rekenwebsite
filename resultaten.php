@@ -83,7 +83,7 @@
                         ' vragen fout.<br/>uw punt is ' 
                         . $icijfer .
                         '<div class="panel blue center">
-                            <a href="session_destroy.php">
+                            <a href="session_destroy_index.php">
                                 <button> Terug </button>
                             </a>
                         </div>';
