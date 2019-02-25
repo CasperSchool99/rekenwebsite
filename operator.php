@@ -10,6 +10,11 @@ $groep = 0;
 $groep = $_GET['groep'];
 ?>
 	<div class="backgroundgroep">
+			<div class="panel white">
+				<a href="session_destroy_index.php">
+					<button> Terug </button>
+				</a>
+			</div>
 		<div class="sommen">
 		<div class="panel purple">
 			<a href="main.php?groep=<?= $groep ?>&operator=plus"><button>+ sommen</button></a>

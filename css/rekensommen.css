@@ -30,7 +30,7 @@ body {
 	background-color:rgba(136, 136, 136, 0.8);
 	width: 50vw;
 	height: 25vh;
-	margin-top: 25vh;
+	margin-top: 20vh;
 	margin-left: 25vw;
 	margin-right: 25vw;
 	border-radius: 10px;
@@ -48,10 +48,11 @@ input[type=number] {
 	border-radius: 4px;
 	resize: vertical;
 	position: relative;
+	height: 10%;
 }
 
-input[type=submit] {
-	background-color: grey;
+/*input[type=submit] {
+	background-color: transparent;
 	color: white;
 	padding: 12px 20px;
 	border: none;
@@ -61,10 +62,18 @@ input[type=submit] {
 
 input[type=submit]:hover {
   	background-color: grey;
-}
+}*/
 
 .center{
 	text-align: center;
 	font-size: 2em;
 	color: white;
+}
+
+.align_form {
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: -2.5%;
 }

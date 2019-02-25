@@ -11,8 +11,8 @@ button:hover:before, button:hover:after {width:calc(100% + 12px);
 button:hover {color:#353535;background-color:#fff;border-color:#fff}
 
 .purple button {color:black;border-color:black}
-.purple button:before, .blue button:after  {border-color:purple}
-.purple button:hover:before, .blue button:hover:after {width:calc(100% + 12px);
+.purple button:before, .purple button:after  {border-color:purple}
+.purple button:hover:before, .purple button:hover:after {width:calc(100% + 12px);
   height:calc(100% + 12px);border-color:purple;transform:rotateY(180deg)}
 .purple button:hover {color:black;background-color:transparent;border-color:black}
 .purple .panel {max-width:960px;text-align:center;position:relative;margin:auto;}
@@ -24,6 +24,15 @@ button:hover {color:#353535;background-color:#fff;border-color:#fff}
 .blue button:hover {color:#A7A1AE;background-color:transparent;border-color:#A7A1AE}
 .blue .panel {max-width:960px;text-align:center;position:relative;margin:auto;}
 .blue .panel {text-decoration: none;}
+
+.white button {color:white;border-color:white}
+.white button:before, .white button:after  {border-color:white}
+.white button:hover:before, .white button:hover:after {width:calc(100% + 12px);
+  height:calc(100% + 12px);border-color:white;transform:rotateY(180deg)}
+.white button:hover {color:white;background-color:transparent;border-color:#A7A1AE}
+.white .panel {max-width:960px;text-align:center;position:relative;margin:auto;}
+.white .panel {text-decoration: none;}
+button:hover {cursor: pointer;}
 
 .borderless button {border-color:rgba(0,0,0,0);color:#999}
 .borderless button:hover {border-color:#353535;background-color:transparent;color:#353535}
@@ -38,6 +47,7 @@ box-shadow:0 1px 3px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.1) inset
   height:calc(100% + 12px);border-color:#353535;}
 .bw button:hover {color:#fff;background-color:#353535;border-color:#353535}
 .blue .panel {max-width:960px;text-align:center;position:relative;margin:auto;}
+.white .panel {max-width:960px;text-align:center;position:relative;margin:auto;}
 .blue {text-align: right; width: 100%;}
 .center {text-align: center;}
 
@@ -56,7 +66,7 @@ box-shadow:0 1px 3px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.1) inset
 	  flex-direction: row;
 	  flex-wrap: wrap;
 	  justify-content: center;
-	  padding: 200px 0 0 0;
+	  padding-top: 11vh;
   }
 
 body {
@@ -66,3 +76,20 @@ body {
 }
 
 
+input[type=submit] {color:#454545;background:transparent;height:4em;width:9em;border-width:2px;border-style: solid;border-color: #454545;position:relative;margin:1em;display:inline-block;padding:0.5em 1em;transition:all 0.3s ease-in-out;text-align:center;
+font-family:comfortaa;font-weight:bold}
+input[type=submit]:before, input[type=submit]:after {content:'';display:block;position:absolute;border-color:#454545;box-sizing:border-box;border-style:solid;width:1em;height:1em;transition:all 0.3s ease-in-out}
+input[type=submit]:before {top:-6px;left:-6px;border-width:2px 0 0 2px;z-index:5;}
+input[type=submit]:after {bottom:-6px;right:-6px;border-width:0 2px 2px 0;}
+input[type=submit]:hover:before, input[type=submit]:hover:after {width:calc(100% + 12px);
+height:calc(100% + 12px);border-color:#fff}
+input[type=submit]:hover {color:#353535;background-color:#fff;border-color:#fff}
+input[type=submit]:hover {cursor: pointer;}
+
+.white input[type=submit] {color:white;border-color:white}
+.white input[type=submit]:before, .white input[type=submit]:after  {border-color:white}
+.white input[type=submit]:hover:before, .white input[type=submit]:hover:after {width:calc(100% + 12px);
+  height:calc(100% + 12px);border-color:white;transform:rotateY(180deg)}
+.white input[type=submit]:hover {color:white;background-color:transparent;border-color:#A7A1AE}
+.white .panel {max-width:960px;text-align:center;position:relative;margin:auto;}
+.white .panel {text-decoration: none;}

@@ -15,7 +15,7 @@
             if ($toets == 0) {
                 echo '
                 <div class="panel blue">
-                    <a href="session_destroy.php">
+                    <a href="session_destroy_index.php">
                         <button> Terug </button>
                     </a>
                 </div>
@@ -23,7 +23,7 @@
                 <thead>
                 <tr>
                     <th><h1>Sommen</h1></th>
-                    <th><h1>Jou antwoord</h1></th>
+                    <th><h1>Jouw antwoord</h1></th>
                     <th><h1>Juiste antwoord</h1></th>
                     <th><h1>Resultaat</h1></th>
                 </tr>

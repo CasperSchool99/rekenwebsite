@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" type="text/css" href="css/rekensommen.css">
+    <link rel="stylesheet" href="css/btn.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
 <head>
     <title></title>
 </head>
 <body>
 <div class="background">
+    <div class="panel white">
+                    <a href="session_destroy_index.php">
+                        <button> Terug </button>
+                    </a>
+    </div>
+
     <div class="grey">
 <?php 
     session_start();
@@ -63,11 +70,15 @@
     echo '<div class="center">' . $_SESSION['som']++ . ' / ' . '20 </div>';
     echo"
         <form method='post'>
-            <label for='awnser'>";
-            echo $Getal1 . " " .  $operator . " " .  $Getal2 . " = " ;
-            echo"  </label>
-            <input type='number' name='answer'>
-            <input type='submit' name='submit' value='Volgende'>
+            <div class= 'align_form'>
+                <label for='awnser'>";
+                echo $Getal1 . " " .  $operator . " " .  $Getal2 . " = " ;
+                echo"  </label>
+                <input type='number' name='answer'>
+                <div class='panel white'>
+                    <input type='submit' name='submit' value='Volgende'>
+                </div>
+            </div>
         </form>
     ";
             if ($_SESSION['antwoorden'] == ""){
